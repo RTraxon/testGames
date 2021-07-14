@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<?xml version="1.0" encoding="utf-8"><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bingo Game</title>
+    <link rel="stylesheet" href="bingo-game-45-ron4fve.css">
+
+    <link rel="stylesheet" href="bingo-game-62-twinkl-buttons.css">
+    <link rel="stylesheet" href="bingo-game-63-game-ui.css">
+    <link rel="stylesheet" href="bingo-game-64-animate.min.css">
+    <link rel="stylesheet" href="bingo-game-65-bingo-game.css"> <!-- LINK TO MAIN CSS FILE -->
+
+
+
+    
+
+    <style>
+        #container, .title-text, .title-subtext, .text-button {
+            font-family: "celestia-antiqua-mvb" !important;
+        }
+    </style>
+
+    <script src="bingo-game-1-jquery-1.12.4.js"></script>
+    <script src="bingo-game-2-jquery-ui.js"></script>
+    <script src="bingo-game-3-howler.min.js"></script>
+    <script src="bingo-game-4-widow-fix.js"></script>
+
+
+    <script data-manifest src="bingo-game-38-manifest-inline-script.js"></script>
+    <script src="bingo-game-39-utils.js"></script>
+    <script src="bingo-game-40-basic-template.js"></script> <!--LINK TO MAIN JAVASCRIPT FILE-->
+
+    <script src="bingo-game-41-manifest-inline-script.js"></script>
+</head>
+<body onload="init()">
+
+<!--PRELOADER-------------------------------------------------------------------------------->
+
+<div id="preload-div" class="loading" style="z-index: 100">
+    <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
+    <img src="bingo-game-42-twinkl_preloader.gif" style="vertical-align: middle; max-height: 100%;">
+</div>
+
+
+<!--DOCUMENT-------------------------------------------------------------------------------->
+
+<div id="container" class="go-interactive interactive-theme-orange-strong">
+
+    <!--TITLE PAGE------------------------------------------------------------------------------>
+
+    <div id="titlePage" class="title-screen pages">
+        <!--
+        <h1 id="title" class="title-text inverted"></h1>
+        <div id="subContainer" class ="theme-background-dark sub-heading"></div>-->
+        <span id="title" class="title-text">{{ title }}</span>
+        <div id="subContainer" class="title-subtext filled explore theme-colour" style="top: 33%; font-weight: 900; font-size: 46px">{{ subtitle }}</div>
+
+        <div id="lets-go-button" class="text-button"> <div class="fit-me-button">Let's go!</div></div>
+        <!--<img src="/assets/svg/logo/Twinkl-Logo-white.svg" class="title-logo">-->
+
+        <img class="title-logo" style="position: absolute; top: -1px; left: auto; right: 5%; width: 11%; ">
+
+        <div class="main-screen backgrounded cover" style="background-position: left bottom"></div>
+
+        <div style="position: absolute; color: white; bottom: 1%; right: 10%; font-size: 10px; font-family: Roboto, Arial, Serif">Artwork by Jonny Duddle and Jim Kay copyright © Bloomsbury Publishing Plc</div>
+        <div style="position: absolute; color: white; bottom: 1%; left: 4%; font-size: 10px; font-family: Roboto, Arial, Serif">© & TM WBEI. Publishing Rights © JKR (s21).</div>
+    </div>
+
+    <!--INSTRUCTIONS PAGE----------------------------------------------------------------------->
+
+    <div id="instructionsPage" class="pages">
+        <div id="instructionsPanel" class="jodal">
+            <div class="jodal-back"></div>
+            <h1 class="jodal-title">How to Play:</h1>
+            <p class="jodal-text allInstructions">Examine the news story and work out whether it's real or fake news. See how many you can get correct!</p>
+            <div id="playButton" class="main-theme-color border-radius text-button play">Play</div>
+        </div>
+    </div>
+
+    <!--NAVIGATION-------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="go-navigation-bar">
+        <div class="go-nav-panel">
+            <div class="circle-buttons-container">
+                <span class="font-button close help-close ebook-close-button inverted" id="close-button"><span class="path1"></span><span class="path2"></span></span>
+            </div>
+            <div class="square-buttons-container">
+                <span class="sound-toggle font-button sound-off" id="mute-button"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                <span class="fullscreen font-button expand-screen" id="fullscreen-button"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <!--MAIN PAGE----------------------------------------------------------------------------------------------------------------------------->
+
+    <div id="mainPage" class="pages">
+
+        <div class="panel">
+
+
+            <img id="bingo_dabber" src="bingo-game-44-dabber.png">
+
+
+            <div class="bingo-board-cont">
+
+            </div>
+
+            <div class="bingo-reveal-cont">
+                <div class="bingo-reveal">
+                    <div class="bingo-reveal-text"></div>
+                    <div class="bingo-reveal-image animate__animated "></div>
+                </div>
+                <div class="text-button skip-button">Skip</div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="well-done" class="jodal pages">
+        <div class="jodal-back"></div>
+        <h1 id="isItCorrect" class="jodal-title">Bingo!</h1>
+        <p id="congrats-screen-text" class="jodal-text jodal-sub-text">You got all of them correct</p>
+        <!-- <p class="jodal-text jodal-sub-text">Your total score is <span> <b id="total-point-counter">8 points!</b></span></p>-->
+
+        <div id="button-contain" style="z-index: 100">
+            <div id="play-again" class="border-radius text-button play"> Play Again </div>
+        </div>
+    </div>
+
+    <!--INSERT ADDITIONAL PAGES HERE-->
+
+
+</div>
+</body>
+</html>

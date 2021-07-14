@@ -1,0 +1,52 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * celestia-antiqua-mvb:
+ *   - http://typekit.com/eulas/00000000000000007735c7fc
+ *   - http://typekit.com/eulas/00000000000000007735c7fe
+ *   - http://typekit.com/eulas/00000000000000007735c801
+ *   - http://typekit.com/eulas/00000000000000007735c804
+ * celestia-antiqua-mvb-small-c:
+ *   - http://typekit.com/eulas/00000000000000003b9b44e8
+ *
+ * © 2009-2021 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2021-05-31 10:56:10 UTC"}*/
+
+@import url("bingo-game-45-p.css");
+
+@font-face {
+font-family:"celestia-antiqua-mvb";
+src:url("bingo-game-46-l") format("woff2"),url("bingo-game-47-d") format("woff"),url("bingo-game-48-a") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"celestia-antiqua-mvb";
+src:url("bingo-game-49-l") format("woff2"),url("bingo-game-50-d") format("woff"),url("bingo-game-51-a") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;
+}
+
+@font-face {
+font-family:"celestia-antiqua-mvb";
+src:url("bingo-game-52-l") format("woff2"),url("bingo-game-53-d") format("woff"),url("bingo-game-54-a") format("opentype");
+font-display:auto;font-style:normal;font-weight:600;
+}
+
+@font-face {
+font-family:"celestia-antiqua-mvb";
+src:url("bingo-game-55-l") format("woff2"),url("bingo-game-56-d") format("woff"),url("bingo-game-57-a") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"celestia-antiqua-mvb-small-c";
+src:url("bingo-game-58-l") format("woff2"),url("bingo-game-59-d") format("woff"),url("bingo-game-60-a") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+.tk-celestia-antiqua-mvb { font-family: "celestia-antiqua-mvb",serif; }
+.tk-celestia-antiqua-mvb-small-c { font-family: "celestia-antiqua-mvb-small-c",serif; }
